@@ -1,15 +1,23 @@
 .site-header {
 	background-color: rgba(229,184,67);
+    font-size: 13px;
+    text-decoration: none;
 }
 
 body {
     font-family: 'Martian Mono';
+    background: rgba(229,184,67);
 }
 
-a.site-logo-wrapper img {
-	padding-left: 200px;
+a {
+    text-decoration: none;
+}
+
+a.logo img {
+	padding-left: 100px;
 	max-width: 400px;
 	display: block;
+    margin-top: 30px;
 }
 
 .img {
@@ -26,7 +34,7 @@ a.site-logo-wrapper img {
     left: 0;
     background-color: rgba(229,184,67);
     display: flex;
-    align-items: center;
+    align-items: center; 
     nav {
         li {
             display: inline-block;
@@ -37,4 +45,35 @@ a.site-logo-wrapper img {
     a {
         color: white;
     }
+}
+
+.udcmn img, .top img, .sinc-kent img, .tls img, .irmc img, .dttah img {
+    padding-top: 50px;
+    padding-left: 50px;
+    height: 250px;
+    width: 250px;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 200px;
+}
+
+.btn-udcmn, .btn-top, .btn-sinc-kent, .btn-tls, .btn-irmc, .btn-dttah {
+    font-family: 'Martian Mono';
+    background-color: white;
+    color: rgba(229,184,67);
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+    decoration: none;
+    display: block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.btn-udcmn:hover, .btn-top:hover, .btn-sinc-kent:hover, .btn-tls:hover, .btn-irmc:hover, .btn-dttah:hover {
+    background-color: rgb(171 139 57);
 }
