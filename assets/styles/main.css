@@ -14,7 +14,7 @@ a {
 }
 
 a.logo img {
-	padding-left: 100px;
+	padding-left: 30px;
 	max-width: 400px;
 	display: block;
     margin-top: 30px;
@@ -27,11 +27,6 @@ a.logo img {
 }
 
 .site-header {
-    position: initial;
-    z-index: 99;
-    top: 0;
-    right: 0;
-    left: 0;
     background-color: rgba(229,184,67);
     display: flex;
     align-items: center; 
@@ -52,11 +47,14 @@ a.logo img {
     padding-left: 50px;
     height: 250px;
     width: 250px;
+}
+
+.containers {    
     display: grid;
     grid-template-rows: 100px 100px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 200px;
+    grid-column-gap: 30px;
+    grid-row-gap: 250px;
 }
 
 .btn-udcmn, .btn-top, .btn-sinc-kent, .btn-tls, .btn-irmc, .btn-dttah {
