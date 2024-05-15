@@ -1,6 +1,6 @@
 .site-header {
 	background-color: rgba(229,184,67);
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -42,19 +42,35 @@ a.logo img {
     }
 }
 
+.intestazione {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding-left: 125px; 
+    padding-top: 40px;
+}
+
 .udcmn img, .top img, .sinc-kent img, .tls img, .irmc img, .dttah img {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 50px;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
 }
 
 .containers {    
+    padding-left: 75px;
     display: grid;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 100px 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 250px;
+    grid-column-gap: 0px;
+    grid-row-gap: 325px;
+}
+
+.title-udcmn, .title-top, .title-sinc-kent, .title-tls, .title-irmc, .title-dttah {
+    color: white;
+    font-weight: bold;
+    padding-left: 50px;
+    max-width: 300px;
 }
 
 .btn-udcmn, .btn-top, .btn-sinc-kent, .btn-tls, .btn-irmc, .btn-dttah {
@@ -69,7 +85,7 @@ a.logo img {
     decoration: none;
     display: block;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .btn-udcmn:hover, .btn-top:hover, .btn-sinc-kent:hover, .btn-tls:hover, .btn-irmc:hover, .btn-dttah:hover {
