@@ -42,7 +42,7 @@ a.logo img {
     }
 }
 
-.intestazione {
+.intestazione, .discover-more {
     font-size: 30px;
     color: white;
     font-weight: bold;
@@ -90,4 +90,8 @@ a.logo img {
 
 .btn-udcmn:hover, .btn-top:hover, .btn-sinc-kent:hover, .btn-tls:hover, .btn-irmc:hover, .btn-dttah:hover {
     background-color: rgb(171 139 57);
+}
+
+.carosello {
+    
 }
