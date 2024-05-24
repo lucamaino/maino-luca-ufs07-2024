@@ -42,7 +42,7 @@ a.logo img {
     }
 }
 
-.intestazione, .discover-more {
+.intestazione {
     font-size: 30px;
     color: white;
     font-weight: bold;
@@ -92,6 +92,58 @@ a.logo img {
     background-color: rgb(171 139 57);
 }
 
+.discover-more {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding-top: 475px;
+    display: flex;
+    justify-content: center;
+}
+
 .carosello {
-    
+    position: relative;
+    overflow: hidden;
+}
+
+.carosello-img {
+    padding-top: 20px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img-brand img {
+    max-width: 100%;
+    display: flex;
+}
+
+.prev, .next {
+    position: absolute;
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
 }
