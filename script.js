@@ -1,27 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const carouselImages = document.querySelector('.carosello-img');
-    const images = document.querySelectorAll('.img-brand');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    let currentIndex = 0;
+const images = document.querySelectorAll('.udcmn img, .top img, .sinc-kent img, .tls img, .irmc img, .dttah img');
 
-    function showImage(index) {
-        if (index < 0) {
-            currentIndex = images.length - 1;
-        } else if (index >= images.length) {
-            currentIndex = 0;
-        } else {
-            currentIndex = index;
-        }
-        const offset = -currentIndex * 100;
-        carouselImages.style.transform = `translateX(${offset}%)`;
-    }
-
-    prevButton.addEventListener('click', function() {
-        showImage(currentIndex - 1);
+images.forEach(img => {
+    img.addEventListener('mouseover', () => {
+        img.classList.add('zoom');
     });
-
-    nextButton.addEventListener('click', function() {
-        showImage(currentIndex + 1);
+    img.addEventListener('mouseout', () => {
+        img.classList.remove('zoom');
     });
 });

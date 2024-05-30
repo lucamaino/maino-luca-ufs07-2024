@@ -17,9 +17,9 @@
                 <img src="assets/images/logoyb.png" alt="">
             </a>
 
-            <nav>
-                <ul> <!--unordered list-->
-                    <li> <!--list item-->
+            <nav class="titoli">
+                <ul> 
+                    <li> 
                         <a href="index.html" title="Home">Home</a>
                     </li>
                     <li>
@@ -29,7 +29,7 @@
                         <a href="https://www.youtube.com/channel/UClW4jraMKz6Qj69lJf-tODA" title="Video" target="_blank">Video</a>
                     </li>
                     <li>
-                        <a href="https://www.youngboynba.com/#newsletter" title="Newsletter" target="_blank">Newsletter</a>
+                        <a href="#form-newsletter" title="Newsletter" target="_blank">Newsletter</a>
                     </li>
                 </ul>
             </nav>
@@ -42,7 +42,7 @@
         <div class="containers">
             <div class="container-udmcn">
                 <a class="udcmn" title="Until Death Call My Name">
-                    <img src="assets/images/udcmn.jpg" alt="">
+                    <img src="assets/images/udcmn.jpg">
                 </a>
                 <div class="title-udcmn">
                     <br>Until Death Call My Name</br>
@@ -54,7 +54,7 @@
         
             <div class="container-top">
                 <a class="top" title="Top">
-                    <img src="assets/images/top.jpg" alt="">
+                    <img src="assets/images/top.jpg">
                 </a>
                 <div class="title-top">
                     <br>Top</br>
@@ -66,7 +66,7 @@
 
             <div class="container-sinc-kent">                
                 <a class="sinc-kent" title="Sincerely, Kentrell">
-                    <img src="assets/images/sinc-kent.jpg" alt="">
+                    <img src="assets/images/sinc-kent.jpg">
                 </a>
                 <div class="title-sinc-kent">
                     <br>Sincerely, Kentrell</br>
@@ -78,7 +78,7 @@
 
             <div class="container-tls">    
                 <a class="tls" title="The Last Slimeto">
-                    <img src="assets/images/tls.jpg" alt="">
+                    <img src="assets/images/tls.jpg">
                 </a>
                 <div class="title-tls">
                     <br>The Last Slimeto</br>
@@ -90,7 +90,7 @@
 
             <div class="container-irmc">    
                 <a class="irmc" title="I Rest My Case">
-                    <img src="assets/images/irmc.jpeg" alt="">
+                    <img src="assets/images/irmc.jpeg">
                 </a>
                 <div class="title-irmc">
                     <br>I Rest My Case</br>
@@ -102,7 +102,7 @@
 
             <div class="container-dttah">
                 <a class="dttah" title="Don't Try This At Home">
-                    <img src="assets/images/dttah.jpeg" alt="">
+                    <img src="assets/images/dttah.jpeg">
                 </a>
                 <div class="title-dttah">
                     <br>Don't Try This At Home</br>
@@ -113,22 +113,49 @@
             </div>    
         </div>
 
-        <div class="discover-more">
-            <a>Discover more</a>
+        <div class="newsletter" id="form-newsletter">
+            <a>Newsletter</a>
         </div>
 
-        <div class="carosello">
-            <div class="carosello-img">
-                <div class="img-brand">
-                    <img src="assets/images/supreme.jpg" alt="Supreme x Youngboy Never Broke Again">
-                </div>
-                <div class="img-brand">
-                    <img src="assets/images/guapi.jpg" alt="Guapi x Youngboy Never Broke Again">
+        <form>
+            <div>
+                <label for="name">NAME</label>
+                <input type="text" id="thename" name="name">
+            </div>
+
+            <div>
+                <label for="email">EMAIL</label>
+                <input type="email" id="theemail" name="email" required>
+            </div>
+
+            <div>
+                <label for="msg">COUNTRY OF RESIDENCE</label>
+                <textarea id="msg" name="name"></textarea>
+            </div>
+
+            <div>
+            </div>
+
+            <button class="btn-form" type="submit">Subscribe</button>
+        </form>
+
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="site-footer">
+                    <ul>
+                        <li>
+                            <a href="terms-conditions.html" title="Terms and conditions">Terms and conditions</a>
+                        </li>
+                        <li>
+                            <a href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="cookie-policy.html" title="Cookie Policy">Cookie Policy</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <button class="prev">‹</button>
-            <button class="next">›</button>
-        </div>
+        </footer>
 
         <script src="script.js"></script>
 </body>

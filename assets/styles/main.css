@@ -9,6 +9,10 @@ body {
     background: rgba(229,184,67);
 }
 
+.titoli {
+    padding-top: 50px;
+}
+
 a {
     text-decoration: none;
 }
@@ -75,6 +79,7 @@ a.logo img {
 
 .btn-udcmn, .btn-top, .btn-sinc-kent, .btn-tls, .btn-irmc, .btn-dttah {
     font-family: 'Martian Mono';
+    font-weight: bold;
     background-color: white;
     color: rgba(229,184,67);
     padding: 8px 15px;
@@ -101,49 +106,80 @@ a.logo img {
     justify-content: center;
 }
 
-.carosello {
-    position: relative;
-    overflow: hidden;
+.zoom {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
 }
 
-.carosello-img {
+.newsletter {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding-left: 125px; 
+    padding-top: 475px;
+}
+
+form {
+    font-family: 'Martian Mono';
+    color: white;
     padding-top: 20px;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+    padding-left: 125px;
+    label {
+        padding-top: 10px;
+        display: block;
+        margin: 0.5em 0 0.25em;
+    }
+
+    textarea,
+    input:not([type="checkbox"]) {
+        padding-top: 10px;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        background-color: transparent;
+    }
 }
 
-.img-brand img {
-    max-width: 100%;
-    display: flex;
-}
-
-.prev, .next {
-    position: absolute;
-    padding-top: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+.btn-form {
+    font-family: 'Martian Mono';
+    font-weight: bold;
+    background-color: white;
+    color: rgba(229,184,67);
+    padding: 8px 15px;
     border: none;
-    padding: 10px;
     cursor: pointer;
-    z-index: 1;
+    position: relative;
+    bottom: 10px;
+    decoration: none;
+    display: block;
+    margin-top: 30px;
 }
 
-.prev {
-    left: 10px;
-}
+.footer {
+    padding-top: 1em;
+    ul {
+        li {
+            display: inline-block;
+        }
+    }
 
-.next {
-    right: 10px;
-}
+    .site-footer {
+        padding: 1em 0;
+        border-top: 1px solid white;
+        margin-top: 1em;
+        text-align: center;
+        li {
+            margin: 0 0.5em;
+        }
+        a {
+            color: white;
+            font-size: 0.75rem;
+        }
+        }
+    }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
+.container-footer {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
 }
