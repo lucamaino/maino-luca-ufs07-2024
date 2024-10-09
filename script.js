@@ -8,4 +8,4 @@ images.forEach(img => {
     img.addEventListener('mouseout', () => {
         img.classList.remove('zoom');
     });
-});
+});  
